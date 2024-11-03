@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <title>Grid Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-areas: 
+                "aside1 main aside2";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    
+        main {
+            grid-area: main;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .sidebar h3 {
+            background-color: pink;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: pink;
+            color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Sidebar Satu</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </aside>
+
+        <main>
+            <h1>Judul Artikel</h1>
+            <br><br>
+
+            <p>
+                <img src="img/green.gif">
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <p>Nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam. Faucibus purus in massa tempor nec. Feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Suspendisse sed nisi lacus sed viverra tellus.</p>
+
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Mauris vitae ultricies leo.</p>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Sidebar Dua</h3>
+            <p>Duis ex mollit tempor. Ad anim reprehenderit in laborum dolor id aliqua dolore do fugiat sunt amet amet eu ullamco ut. Ea dolor est aliquip.
+                Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Mauris vitae ultricies leo.
+                Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Mauris vitae ultricies leo.
+            </p>
+        </aside>
+    </div>
+</body>
+</html>
